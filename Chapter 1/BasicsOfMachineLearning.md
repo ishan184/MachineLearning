@@ -116,6 +116,4 @@ Amount of Regularization can be controlled by **Hyperparameter**.
 
 ### Underfitting Data
 
-Very easy algorithm, add more dimentions
-
-
+- Very easy algorithm, add more dimentions
