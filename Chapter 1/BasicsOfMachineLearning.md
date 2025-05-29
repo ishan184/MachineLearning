@@ -7,6 +7,9 @@
 - **NLP** - Natural Language Processing is a subfield of computer science and artificial intelligence that enables computers to understand and generate human language
 - **RNN** - A recurrent neural network (RNN) is a deep learning model that is trained to process and convert a sequential data input into a specific sequential data output.
 - **Transformer** - The transformer is a deep learning architecture based on the multi-head attention mechanism. Text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table
+- **Generalization Error** - Error rate on the test set for a model. 
+- **Training Error** - Error rate on the training set. 
+- **Hyperparameter** = Hyperparameters are settings that determine how the model learns, and they are set before training starts. They can affect the model's architecture, learning rate, and other aspects of the training process. 
 
 ## Types Of Machine learning
 
@@ -64,4 +67,55 @@ Let's say it depends on only one parameter, thus we select **Linear Model** - th
 Traning the model mean choosing values of c1 and c2 based on your data. 
 Once chosen we can simply make predication using GDP value for Life satisfaction.  (example in LinearRegression.ipynb)
 
+### Ensemble learning
+
+Ensemble learning is a technique that combines multiple machine learning models to improve the overall performance. The idea is to leverage the strengths of different models to create a more robust and accurate prediction system. Common methods include bagging, boosting, and stacking.
+
+### Federated learning 
+
+Federated learning is a distributed machine learning approach where multiple devices or servers collaboratively train a model while keeping the data localized. This method enhances privacy and security by ensuring that sensitive data does not leave the device, while still allowing for the benefits of collective learning.
+
+### Meta-learning
+
+A learning-to-learn approach where models learn how to learn new tasks quickly with minimal data.
+
+
 ![Alt text](../images/MLCategories.png "ML Categories")
+
+
+## Main Challenges
+
+- Data Based 
+
+### Insufficient Training data
+
+Mostly all of the machine learning algorithms behave the same way when trained on more and more data. As we train with more data algorithm becomes less significant and performance is similar. 
+Thus, amount of data has much higher role on how model behave. 
+But if data is less, algorithm plays a very important role. 
+
+### Non-representive Training data
+
+Training data should be representive of what predictions are to be made and this is very difficult. 
+
+### Poor Quality Data
+
+Lot of noise in the data. 
+
+### Irrelevant Features
+
+Feature selection, Feature Extraction are the key steps to remove irrelevant features. 
+
+- Algorith based 
+
+### Overfitting Data
+
+The algorithm is too complex for the problem, starts finding the patterns that were not intended. 
+Limit the algorithm to less dimentions. (Linear instead of multinomial)
+*Regularization of Model* :  A set of techniques used to prevent overfitting in models, improving their ability to generalize to new, unseen data. It achieves this by adding a penalty to the model's complexity, encouraging it to learn broader patterns rather than memorizing the training data. This penalty is often added to the loss function, making the model less sensitive to noise in the training data. 
+Amount of Regularization can be controlled by **Hyperparameter**. 
+
+### Underfitting Data
+
+Very easy algorithm, add more dimentions
+
+
